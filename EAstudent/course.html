@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学员自助系统</title>
+    
+    <link rel="stylesheet" href="css/mui.min.css">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/calendar.css"/>
+</head>
+<body>
+    <a class="return" href="index.html">返回</a>
+   
+    <div class="main">
+        <div class="course-box">
+            <div id="segmentedControl" class="mui-segmented-control com-tab">
+                <a class="mui-control-item mui-active" href="#item1">按日期查看</a>
+                <a class="mui-control-item" href="#item2">按课程查看</a>
+            </div>
+            <div class="list">
+                <div id="item1" class="mui-control-content mui-active list1">
+                    <div id="dateWidget" style="background-color:white"></div>
+					<ul>
+						<li>
+                            <div class="item item1">
+                                <span class="title ellipsis">中级管理会计师</span>
+                                <span class="status">请假</span>
+                            </div>
+                            <div class="item item2">
+                                <span class="time">上课时间：14：00-15：50</span>
+                                <span class="teacher">任课教师：叶丰茂</span>
+                            </div>
+                            <div class="item item2">
+                                <span class="campus">上课校区：集团总部</span>
+                                <span class="classroom">上课教室：教室五</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item item1">
+                                <span class="title ellipsis">中级管理会计师</span>
+                                <span class="status">请假</span>
+                            </div>
+                            <div class="item item2">
+                                <span class="time">上课时间：14：00-15：50</span>
+                                <span class="teacher">任课教师：叶丰茂</span>
+                            </div>
+                            <div class="item item2">
+                                <span class="campus">上课校区：集团总部</span>
+                                <span class="classroom">上课教室：教室五</span>
+                            </div>
+                        </li>
+					</ul>
+				</div>
+				<div id="item2" class="mui-control-content list2">
+					<ul>
+						<li>
+                            <div class="item item1">
+                                <span class="title ellipsis">中级管理会计师</span>
+                                <a href="course_detail.html" class="sign has-sign">查看详情</a>
+                            </div>
+                            <div class="item item2">
+                                <span >共：30节</span>
+                                <span >已完成：<span class="finished">3节</span></span>
+                                <span >待开课：27节</span>
+                              
+                            </div>
+                        </li>
+						<li>
+                            <div class="item item1">
+                                <span class="title ellipsis">高级管理会计师</span>
+                                <a href="course_detail.html" class="sign has-sign">查看详情</a>
+                            </div>
+                            <div class="item item2">
+                                <span >共：30节</span>
+                                <span >已完成：<span class="finished">3节</span></span>
+                                <span >待开课：27节</span>
+                              
+                            </div>
+                        </li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script>
+        $(function(){
+            calendarWidget.initCalculate({
+            elem: "#dateWidget",
+            mark: [{
+                time: '2021-3-7',
+                markPoint: true,
+            },{
+                time: '2021-3-10',
+                markPoint: true,
+            }],
+            mounted: function (data) { //初始化完成
+                
+            },
+            change: function (selectedDate, markPoint) {
+                console.log(selectedDate)
+            },
+            dateclick: function (widget, curentDate) { //点击顶部时间回调,方便外部设置时间
+                
+            },
+            formatText: function (text) { //格式化文本
+
+            },
+            // 点击上一个月
+            monthPreclick: function (year,month){
+                console.log(year,month);
+            },
+            // 点击下一个月
+            monthNextclick: function (year,month){
+                console.log(year,month);
+            }
+        });
+
+        // 设置标记
+        calendarWidget.setMark(
+            [{
+                time: '2021-4-7',
+                markPoint: true,
+            },{
+                time: '2021-4-10',
+                markPoint: true,
+            }],
+        )
+    })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.main{
+    padding: 0 0.2rem 0.24rem;
+}
+.mail-box{
+    height: 100%;
+    padding: 0.32rem 0.24rem;
+    background-color: #fff;
+}
+.mail-box h4{
+    font-size: 0.4rem;
+    line-height: 0.56rem;
+    margin-bottom: 0.4rem;
+    text-align: center;
+    font-weight: normal;
+}
+.btns{
+    text-align: center;
+    margin-bottom: 0.36rem;
+}
+.btns .btn{
+    display: inline-block;
+    width: 2rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.6rem;
+    margin: 0 0.28rem;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.16);
+}
+.btn-blue{
+    background-color: #503CEA;
+}
+.btn-red{
+    background-color: #F06C57;
+}
+.form{
+    height: calc(100% - 2.04rem);
+}
+input.title{
+    display: block;
+    padding: 0.22rem 0.32rem;
+    height: 0.76rem;
+    border-radius: 0.08rem;
+    background: #EEF2FB;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    margin-bottom: 0.28rem;
+}
+.textarea{
+    display: block;
+    /* height: 5.2rem; */
+    height: calc(100% - 2.8rem);
+    background: #EEF2FB;
+    padding: 0.32rem;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    overflow: auto;
+    border-radius: 0.08rem;
+    margin-bottom: 0.92rem;
+}
+.btn-submit{
+    display: block;
+    height: 0.84rem;
+    line-height: 0.84rem;
+    text-align: center;
+    color: #fff;
+    background-color: #0588FE;
+    border-radius: 0.08rem;
+}

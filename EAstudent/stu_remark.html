@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学员自助系统</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/stu_remark.css">
+</head>
+<body>
+    <a class="return" href="evaluation.html?item=item2">返回</a>
+    <div class="main">
+        <div class="class-info">
+            <div class="info-hd">
+                <h3 class="ellipsis">测试班级2021届1月</h3>
+                <span class="tips">在读</span>
+            </div>
+            <div class="info-bd">
+                <dl>
+                    <dt>班主任：</dt>
+                    <dd>叶丰茂</dd>
+                </dl>
+                <dl>
+                    <dt>教学点：</dt>
+                    <dd>集团总部</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="course-info">
+            <div class="info-hd">
+                <h3>课程信息</h3>
+            </div>
+            <div class="info-bd">
+                <dl>
+                    <dt>课程：</dt>
+                    <dd>中级管理会计师</dd>
+                </dl>
+                <dl>
+                    <dt>教师：</dt>
+                    <dd>叶丰茂</dd>
+                </dl>
+                <dl>
+                    <dt>时间：</dt>
+                    <dd>
+                        <p>2021年01月19日（星期二）</p>
+                        <p>14：00-15：50</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="teacher-info">
+            <div class="info-hd">
+                <h3>评价教师</h3>
+            </div>
+            <div class="info-bd">
+                <div class="star-box">
+                    <div class="icons mui-inline">
+                        <i data-index="1" class="icon-star"></i>
+                        <i data-index="2" class="icon-star"></i>
+                        <i data-index="3" class="icon-star"></i>
+                        <i data-index="4" class="icon-star"></i>
+                        <i data-index="5" class="icon-star"></i>
+                    </div>
+                    <div class="mui-inline text" id="text">未评价</div>
+                </div>
+                <textarea class="textarea" name="" id="" placeholder="请输入评语"></textarea>
+                <a href="javascript:;" class="btn-submit">提交</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script>
+        (function() {
+            var starIndex = 0;
+
+            //评分
+            mui('.icons').on('tap','i',function(){
+                var index = parseInt(this.getAttribute("data-index"));
+                var parent = this.parentNode;
+                var children = parent.children;
+                var text = document.getElementById('text');
+                if(this.classList.contains("icon-star")){
+                    for(var i=0;i<index;i++){
+                        children[i].classList.remove('icon-star');
+                        children[i].classList.add('icon-star-filled');
+                    }
+                }else{
+                    for (var i = index; i < 5; i++) {
+                        children[i].classList.add('icon-star');
+                        children[i].classList.remove('icon-star-filled');
+                    }
+                }
+                starIndex = index;
+
+                switch(index){
+                    case 1:
+                        text.innerText = '及格';
+                        break;
+                    case 2:
+                        text.innerText = '一般';
+                        break;
+                    case 3:
+                        text.innerText = '良好';
+                        break;
+                    case 4:
+                        text.innerText = '优秀';
+                        break;
+                    case 5:
+                        text.innerText = '非常好';
+                        break;
+                    default:
+                        text.innerText = '未评价';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

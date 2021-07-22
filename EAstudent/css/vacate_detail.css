@@ -1,0 +1,30 @@
+.main{
+    padding: 0 0.2rem;
+    overflow: auto;
+}
+.detail{
+    padding: 0 0.24rem 0.42rem;
+    background-color: #fff;
+}
+.detail-item{
+    padding: 0.32rem 0 0.18rem;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.detail-item:last-child{
+    border-bottom: none;
+}
+.detail-item dl{
+    display: flex;
+    line-height: 0.4rem;
+    margin-bottom: 0.2rem;
+    color: #333;
+}
+.detail-item dt{
+
+}
+.detail-item dd{
+    flex: 1;
+}
+.blue{
+    color: #503CEA;
+}

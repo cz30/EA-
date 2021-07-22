@@ -1,0 +1,210 @@
+.calendar-Time-header {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 0.2rem 0.24rem;
+	font-size: 0.3rem;
+	background-color: #0588FE;
+	padding-bottom: 0.3rem;
+}
+.calendar-Time-header a{
+	color: #fff;
+}
+
+.calendar-TimeH {
+	display: inline-block;
+	padding: 0 0.1rem;
+	font-size: 0.36rem;
+	line-height: 0.5rem;
+}
+.calendar-month{
+	display: flex;
+	align-items: center;
+}
+
+.calendar-lastMonth,.calendar-nextMonth {
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.5rem;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.15rem 0.27rem;
+}
+.calendar-lastMonth{
+	background-image: url('../images/arrow_l.png');
+}
+.calendar-nextMonth{
+	background-image: url('../images/arrow_r.png');
+}
+.calendar-year{
+	font-size: 0.36rem;
+	line-height: 0.5rem;
+	color: #fff;
+}
+
+.calendar-row:before,
+.calendar-row:after {
+	display: table;
+	content: ' ';
+}
+
+.calendar-row:after {
+	clear: both;
+}
+
+.calendar-col {
+	/* border-radius: 3px; */
+	width: 14.285714%;
+	float: left;
+	padding: 0.2rem 0;
+	/* min-height: 40px; */
+}
+
+.aligncanter {
+	text-align: center;
+}
+
+.calendar-header {
+	color: #fff;
+	font-size: 0.3rem;
+	background-color: #0588FE;
+}
+
+.calendar-day {
+	transform: translate3d(0px, 0px, 0px) translateZ(0px);
+	transition-duration: 0ms;
+	transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.calendar-content {}
+
+.calendar-today {
+	color: white;
+}
+.calendar-today .dayValue{
+	background-color: #503CEA;
+}
+
+.calendar-active,.calendar-active .calendar-day-6-7{
+	color: #fff;
+}
+.calendar-active .dayValue{
+	background-color: #503CEA;
+}
+
+/* 范围标记 */
+.calendar-range {
+	/* color:#01AAED; */
+	border-radius: 0;
+	background-color: #D9D9D9;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+.ClearBoth {
+	clear: both;
+	/* border-top: 1px solid gainsboro; */
+}
+
+.calendar-col-nextMonth {
+	line-height: 0.64rem;
+	color: gainsboro;
+}
+
+.calendar-col-lastMonth {
+	line-height: 0.64rem;
+	color: gainsboro;
+}
+
+.calendar-point {
+	font-size: 4px;
+	top: -0.3rem;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	color: #F06C57;
+}
+.calendar-point-dot{
+	position: absolute;
+	top:0.07rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 0.08rem;
+	height: 0.08rem;
+	border-radius: 50%;
+	background-color: #F06C57;
+}
+.calendar-point span{
+	color: #F06C57;
+	background-color: #F06C57;
+}
+.calendar-today .calendar-point-dot{
+	background-color: #fff;
+}
+
+.calendar-text {
+	max-height: .25rem;
+	padding: .01rem;
+	width: 100%;
+	font-size: .14rem;
+	color: #01AAED;
+	top: 20px;
+	left: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.dayValue {
+	position: relative;
+	width: 0.64rem;
+	height: 0.64rem;
+	line-height: 0.7rem;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.calendar-day-6-7 {
+	color: gray;
+}
+
+
+/* 以下为实现0.5px底部边界 */
+.under_line {
+	position: relative;
+}
+
+.under_line:before,
+.under_line:after {
+	position: absolute;
+	content: " ";
+	height: 1px;
+	width: 100%;
+	left: 0;
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+}
+
+/* .fineLine:before{顶部top: 0;background: #000;} */
+.under_line:after {
+	bottom: 0;
+	/* border-bottom: 1px solid gainsboro; */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	.under_line:after,
+	.under_line:before {
+		-webkit-transform: scaleY(.667);
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.under_line:after,
+	.under_line:before {
+		-webkit-transform: scaleY(.5);
+	}
+}

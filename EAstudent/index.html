@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学员自助系统</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="header">
+        <!-- <h3>学生自助系统</h3> -->
+        <div class="header-top">
+            <div class="stu-info">
+                <img class="photo" src="images/local/photo.png" alt="">
+                <div class="info-box">
+                    <p class="name ellipsis">姓名：陈小青</p>
+                    <p class="tel">手机号：150****6935</p>
+                </div>
+            </div>
+            <a href="myinfo.html" class="arrow"></a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="menu">
+            <a href="course.html" class="item my-course">我的课表</a>
+            <a href="evaluation.html?item=item1" class="item evaluation">课堂评价</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="apply.html"><i class="icon icon1"></i><span>报名情况</span></a></li>
+                <li><a href="vacate.html"><i class="icon icon2"></i><span>请假记录</span></a></li>
+                <li><a href="address.html"><i class="icon icon3"></i><span>地址管理</span></a></li>
+                <li><a href="mailbox.html"><i class="icon icon4"></i><span>校长信箱</span></a></li>
+            </ul>
+        </div>
+        <div class="course-box">
+            <div id="segmentedControl" class="mui-segmented-control com-tab">
+                <a class="mui-control-item mui-active" href="#item1">今日课程</a>
+                <a class="mui-control-item" href="#item2">本周课程</a>
+            </div>
+            <div class="list">
+                <div id="item1" class="mui-control-content mui-active">
+					<ul>
+						<li>
+							<p class="title-box">
+                                <span class="title ellipsis">中级管理会计师</span>
+                                <span class="class">集团总部  教室五</span>
+                            </p>
+                            <div class="info">
+                                <div class="time">
+                                    <p>2021年1月19日星期二</p>
+                                    <p>14：00-15：50</p>
+                                </div>
+                                <!-- 已签到 -->
+                                <a href="" class="sign no-sign">立即签到</a>
+                            </div>
+						</li>
+						<li>
+							<p class="title-box">
+                                <span class="title ellipsis">中级管理会计师</span>
+                                <span class="class">集团总部  教室五</span>
+                            </p>
+                            <div class="info">
+                                <div class="time">
+                                    <p>2021年1月19日星期二</p>
+                                    <p>14：00-15：50</p>
+                                </div>
+                                <!-- 未签到 -->
+                                <a href="sign.html" class="sign has-sign">立即签到</a>
+                            </div>
+						</li>
+					</ul>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul>
+						<li>
+							<p class="title-box">
+                                <span class="title ellipsis">中级管理会计师</span>
+                                <span class="class">集团总部  教室五</span>
+                            </p>
+                            <div class="info">
+                                <div class="time">
+                                    <p>2021年1月19日星期二</p>
+                                    <p>14：00-15：50</p>
+                                </div>
+                                <!-- 没有签到 -->
+                                <a href="#" class="sign no-sign">立即签到</a>
+                            </div>
+						</li>
+						<li>
+							<p class="title-box">
+                                <span class="title ellipsis">中级管理会计师</span>
+                                <span class="class">集团总部  教室五</span>
+                            </p>
+                            <div class="info">
+                                <div class="time">
+                                    <p>2021年1月19日星期二</p>
+                                    <p>14：00-15：50</p>
+                                </div>
+                                <!-- 已签到 -->
+                                <a href="#" class="sign has-sign">立即签到</a>
+                            </div>
+						</li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+</body>
+</html>

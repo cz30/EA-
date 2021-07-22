@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学员自助系统</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/my_work.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <a class="return" href="index.html">返回</a>
+    <div class="main">
+        <div class="wrap">
+            <ul>
+                <li tabid="2" ><span>未完成</span></li>
+                <li tabid="1" class="choice"><span>已完成</span></li>
+            </ul>
+            <div class="hr"></div>
+            <div class="hidden">
+                <div class="btn_all">
+                    <div class="btn"><span>全部班级</span></div>
+                    <div class="btn"><span>淘宝美工班</span></div>
+                    <div class="btn"><span>UI设计班</span></div>
+                    <div class="btn"><span>UI设计班</span></div>
+                    <div class="btn"><span>UI设计班</span></div>
+                    <div class="btn"><span>UI设计班</span></div>
+                </div>
+            </div>
+
+
+
+            <div id="box">
+<!--                tab栏1-->
+                <div class="show">
+                    <div class="text">
+                        <div class="txt">
+                            <div class="box"><span class="first_span">作业名称：绘制一张橙子海报</span>
+
+                            </div>
+                            <div class="box"><span class="double_span">教师名称：叶老师</span></div>
+                            <div class="box"><span class="double_span">发布时间：2021-06-30</span></div>
+                            <div class="box">
+                                <span class="double_span">截止时间：<span class="last_span">2021-07-20</span></span>
+                                <div class="bg">
+                                    <span>即将截止</span>
+                                </div>
+                                <img src="images/dianping.png" class="comment">
+
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <div class="box"><span class="first_span_1">作业名称：绘制一张火焰海报设计图</span></div>
+                            <div class="box"><span class="double_span">教师名称：叶老师</span></div>
+                            <div class="box"><span class="double_span">发布时间：2021-06-30</span></div>
+                            <div class="box">
+                                <span class="double_span">截止时间：<span>2021-07-20</span></span>
+                                <div class="bg_1">
+                                    <span>已截止</span>
+                                </div>
+                                <img src="images/dianping.png" class="comment">
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <div class="box"><span class="first_span_1">作业名称：绘制一张火焰海报设计图</span> </div>
+                            <div class="box"><span class="double_span">教师名称：叶老师</span></div>
+                            <div class="box"><span class="double_span">发布时间：2021-06-30</span></div>
+                            <div class="box">
+                                <span class="double_span">截止时间：<span>2021-07-20</span></span>
+                                <div class="bg_1">
+                                    <span>已截止</span>
+                                </div>
+                                <img src="images/dianping.png" class="comment">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--                tab栏2-->
+                <div class="tab-item">
+                    <div class="text">
+                        <div class="txt">
+                            <div class="box"><span class="first_span">作业名称：绘制一张火焰海报设计图</span><img class="new" src="images/new.png"> </div>
+                            <div class="box"><span class="double_span">教师名称：叶老师</span></div>
+                            <div class="box"><span class="double_span">发布时间：2021-06-30</span></div>
+                            <div class="box">
+                                <span class="double_span">截止时间：<span class="last_span">2021-07-20</span></span>
+                                <div class="bg">
+                                    <span>即将截止</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <div class="box"><span class="first_span_1">作业名称：绘制一张火焰海报设计图</span> </div>
+                            <div class="box"><span class="double_span">教师名称：叶老师</span></div>
+                            <div class="box"><span class="double_span">发布时间：2021-06-30</span></div>
+                            <div class="box">
+                                <span class="double_span">截止时间：<span>2021-07-20</span></span>
+                                <div class="bg_1">
+                                    <span>已截止</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <div class="box"><span class="first_span_1">作业名称：绘制一张火焰海报设计图</span> </div>
+                            <div class="box"><span class="double_span">教师名称：叶老师</span></div>
+                            <div class="box"><span class="double_span">发布时间：2021-06-30</span></div>
+                            <div class="box">
+                                <span class="double_span">截止时间：<span>2021-07-20</span></span>
+                                <div class="bg_1">
+                                    <span>已截止</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("li").click(function(){
+            // 修改tab标签样式
+            $(this).attr("class","choice")
+            $(this).siblings().attr("class","")
+
+            // 获取tab ID
+            var itemId = $(this).attr("tabid")-1;
+
+            // 切换到指定tab
+            $("#box").children("div:eq("+itemId+")").attr("class","show")
+            $("#box").children("div:eq("+itemId+")").siblings().attr("class","tab-item")
+        })
+    </script>
+    <script src="js/mui.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* 头部 */
+.header{
+    padding: 0 0 0.2rem 0.24rem;
+    background: linear-gradient(183deg, #0449FC 0%, #0588FE 100%);
+    color: #fff;
+}
+.header h3{
+    line-height: 0.76rem;
+    font-size: 0.32rem;
+    font-weight: normal;
+    text-align: center;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../images/header_bg.png') no-repeat right top;
+    background-size: 1.87rem 2.16rem;
+}
+.stu-info{
+    flex: 1;
+    max-width: calc(100% - 0.57rem);
+    padding: 0.38rem 0;
+    display: flex;
+}
+.stu-info .photo{
+    width: 1.4rem;
+    height: 1.4rem;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.stu-info .info-box{
+    flex: 1;
+    margin-left: 0.42rem;
+    max-width: calc(100% - 1.82rem);
+}
+.info-box .name{
+    max-width: 100%;
+    margin-top: 0.24rem;
+    font-size: 0.32rem;
+    line-height: 0.44rem;
+    color: #fff;
+}
+.info-box .tel{
+    margin-top: 0.16rem;
+    font-size: 0.24rem;
+    color: #fff;
+}
+.header-top .arrow{
+    display: block;
+    width: 0.57rem;
+    height: 0.7rem;
+    background: url('../images/arrow.png') no-repeat center;
+    background-size: 0.17rem 0.3rem;
+}
+.wrapper{
+    padding: 0 0.2rem;
+    margin-top: -0.38rem;
+}
+/* 菜单 */
+.menu{
+    padding: 0 0.14rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.38rem;
+}
+.menu .item{
+    display: block;
+    width: 3.2rem;
+    height: 1.4rem;
+    border-radius: 0.12rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3.2rem 1.4rem;
+    font-size: 0.28rem;
+    line-height: 1.4rem;
+    text-align: right;
+    padding-right: 0.28rem;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+.my-course{
+    background-image: url('../images/menu_a.png');
+}
+.evaluation{
+    background-image: url('../images/menu_b.png');
+}
+/* 导航 */
+.nav{
+    padding: 0.22rem;
+    border-radius: 0.08rem;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul li{
+    text-align: center;
+}
+.nav li .icon{
+    display: block;
+    width: 1.04rem;
+    height: 1.04rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.04rem 1.04rem;
+    margin: 0 auto 0.18rem;
+}
+.nav li .icon1{
+    background-image: url('../images/nav_a.png');
+}
+.nav li .icon2{
+    background-image: url('../images/nav_b.png');
+}
+.nav li .icon3{
+    background-image: url('../images/nav_c.png');
+}
+.nav li .icon4{
+    background-image: url('../images/nav_d.png');
+}
+.nav li span{
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+}
+/* 课程表tab */
+.course-box{
+
+}
+
+.list{
+
+}
+.list ul{
+
+}
+.list ul li{
+    padding: 0.3rem 0.22rem;
+    border-bottom: 0.02rem solid #EEF2FB;
+    background-color: #fff;
+}
+.list li .title-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.16rem;
+}
+.list li .title{
+    max-width: 60%;
+    font-size: 0.32rem;
+    color: #0588FE;
+    line-height: 0.44rem;
+}
+.list li .class{
+    line-height: 0.44rem;
+    font-size: 0.28rem;
+    color: #333;
+}
+.list li .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list li .time{
+}
+.list li .time p{
+    line-height: 0.34rem;
+    font-size: 0.24rem;
+    color: #6D6D6D;
+    margin-bottom: 0.06rem;
+}
+.sign{
+    display: inline-block;
+    line-height: 0.4rem;
+    padding-left: 0.51rem;
+    background-size: 0.37rem 0.4rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.no-sign{
+    background-image: url('../images/sign_no.png');
+    color: #C7C7C7;
+}
+.has-sign{
+    background-image: url('../images/sign.png');
+    color: #F06C57;
+}

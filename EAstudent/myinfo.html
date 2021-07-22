@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学员自助系统</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/myinfo.css">
+</head>
+<body>
+    <a class="return" href="index.html">返回</a>
+    <div class="main">
+        <div class="info-box">
+            <img class="photo" src="images/local/photo.png" alt="">
+            <p class="text">基本信息</p>
+            <dl>
+                <dt>姓名：</dt>
+                <dd>郝雨</dd>
+            </dl>
+            <dl>
+                <dt>学号：</dt>
+                <dd>10020170624001</dd>
+            </dl>
+            <dl>
+                <dt>性别：</dt>
+                <dd>女</dd>
+            </dl>
+            <dl>
+                <dt>身份证号：</dt>
+                <dd class="ellipsis">420802199405130029</dd>
+            </dl>
+            <dl>
+                <dt>所属教学点：</dt>
+                <dd>龙港春华</dd>
+            </dl>
+            <dl class="tel-wrap">
+                <dt>手机号：</dt>
+                <dd class="tel-box ellipsis" id="box1">
+                    <p class="tel ellipsis">15026756935</p>
+                    <a class="btn-edit" id="edit" href="javascript:;">编辑</a>
+                </dd>
+                <dd class="tel-box ellipsis mui-hidden" id="box2">
+                    <input type="number" class="input-text" value="15026756935">
+                </dd>
+            </dl>
+            <div class="btns mui-hidden" id="btns">
+                <div class="btn-submit">保存</div>
+                <div class="btn-submit btn-cancel" id="btn-cancel">取消</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script>
+        (function($,doc){
+            $.init();
+            $.ready(function(){
+                var btn = doc.getElementById('edit');
+                var box1 = doc.getElementById('box1');
+                var box2 = doc.getElementById('box2');
+                var btns = doc.getElementById('btns');
+                var btnCancel = doc.getElementById('btn-cancel');
+                btn.addEventListener('tap',function(event) {
+                    box1.classList.add("mui-hidden");
+                    box2.classList.remove("mui-hidden");
+                    btns.classList.remove("mui-hidden");
+                })
+                btnCancel.addEventListener('tap',function(event){
+                    box1.classList.remove("mui-hidden");
+                    box2.classList.add("mui-hidden");
+                    btns.classList.add("mui-hidden");
+                })
+            })
+        })(mui,document);
+    </script>
+</body>
+</html>

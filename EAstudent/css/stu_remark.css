@@ -1,0 +1,83 @@
+.main{
+    padding: 0 0.2rem;
+    overflow: auto;
+}
+.class-info{
+    margin-bottom: 0.2rem;
+}
+.info-hd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.32rem;
+    height: 0.76rem;
+    background: #EEF2FB;
+}
+.info-hd h3{
+    flex: 1;
+    font-size: 0.32rem;
+    line-height: 0.76rem;
+    color: #333;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.class-info h3{
+    padding-left: 0.41rem;
+    background-image: url('../images/icon_class.png');
+    background-size: 0.33rem 0.28rem;}
+.info-hd .tips{
+    display: block;
+    width: 1.2rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    border-radius: 0.4rem;
+    font-size: 0.24rem;
+    color: #fff;
+    text-align: center;
+    background-color: #503CEA;
+}
+.info-bd{
+    padding: 0.22rem 0.32rem 0.18rem;
+    background-color: #fff;
+}
+.info-bd dl{
+    display: flex;
+    color: #333;
+    line-height: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+.info-bd dt{
+
+}
+.info-bd dd{
+    flex: 1;
+    margin-left: 0.12rem;
+}
+.info-bd dd p{
+    line-height: 0.4rem;
+    color: #333;
+}
+.course-info{
+    margin-bottom: 0.2rem;
+}
+.course-info h3{
+    padding-left: 0.34rem;
+    background-image: url('../images/icon_course.png');
+    background-size: 0.26rem 0.27rem;
+}
+.teacher-info h3{
+    padding-left: 0.39rem;
+    background-image: url('../images/icon_teacher.png');
+    background-size: 0.31rem 0.31rem;
+}
+.star-box{
+    padding: 0.06rem 0 0.28rem;
+}
+.textarea{
+    height: 1.68rem;
+    padding: 0.18rem;
+    background-color: #EEF2FB;
+    overflow: auto;
+    font-size: 0.28rem;
+    margin-bottom: 0.2rem;
+}

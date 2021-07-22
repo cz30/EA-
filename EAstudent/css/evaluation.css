@@ -1,0 +1,104 @@
+.com-tab .tip{
+    position: relative;
+    top:-0.1rem;
+    display: inline-block;
+    width: 0.37rem;
+    height: 0.22rem;
+    background: url('../images/msg.png') no-repeat left center;
+    background-size: 0.37rem 0.22rem;
+    margin-left: 0.06rem;
+}
+.main{
+    padding: 0 0.2rem 0.2rem;
+}
+.wrap{
+    height: 100%;
+    background-color: #fff;
+}
+.list{
+    height: calc(100% - 0.76rem);
+    padding: 0.32rem 0.2rem 0.2rem;
+    overflow: auto;
+}
+.remark-list li{
+    padding: 0.28rem 0.24rem 0.38rem;
+    border: 0.02rem solid #EEF2FB;
+    margin-bottom: 0.2rem;
+}
+.course-time{
+    padding-bottom: 0.14rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.time{
+    font-size: 0.24rem;
+    line-height: 0.32rem;
+}
+.go-detail{
+    line-height: 0.32rem;
+    display: inline-block;
+    padding-left: 0.46rem;
+    background: url('../images/icon_detail.png') no-repeat left center;
+    background-size: 0.32rem;
+    font-size: 0.24rem;
+    color: #0588FE;
+
+}
+.course-info{
+    padding-top: 0.14rem;
+}
+.course-title{
+    font-size: 0.32rem;
+    line-height: 0.44rem;
+    color: #0588FE;
+    margin-bottom: 0.08rem;
+}
+.info-box{
+    display: flex;
+    justify-content: space-between;
+}
+.info-box .teacher{
+    flex: 1;
+    line-height: 0.4rem;
+    color: #333;
+    margin-bottom: 0.08rem;
+}
+.star-box{
+    width: 3.7rem;
+}
+
+/* 我评价的课程 */
+.noremark-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.24rem;
+    border: 0.02rem solid #EEF2FB;
+    margin-bottom: 0.24rem;
+}
+.all-info{
+    padding: 0.26rem 0 0.24rem;
+    flex: 1;
+    max-width: calc(100% - 1.36rem);
+}
+.all-info h3{
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    margin-bottom: 0.08rem;
+    color: #0588FE;
+}
+.all-info .time{
+    line-height: 0.34rem;
+    margin-bottom: 0.2rem;
+}
+.btn-remark{
+    display: block;
+    width: 1.36rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    border-radius: 0.32rem;
+    background-color: #0588FE;
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+.main{
+    padding: 0 0.2rem 0.3rem;
+}
+.address{
+    position: relative;
+    height: 100%;
+    padding: 0 0.26rem;
+    border-radius: 0.08rem;
+    background-color: #fff;
+}
+.address h3{
+    line-height: 0.94rem;
+    font-size: 0.32rem;
+    color: #333;
+    text-align: center;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.address-list{
+
+}
+.address dl{
+    display: flex;
+    line-height: 0.4rem;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.address dt{
+    width: 4em;
+    padding: 0.22rem 0;
+    margin-right: 0.32rem;
+    line-height: 0.4rem;
+    font-weight: bold;
+}
+.address dd{
+    flex: 1;
+}
+.people-box{
+    display: flex;
+    align-items: center;
+}
+.address .input-text{
+    font-size: 0.28rem;
+    padding: 0.22rem 0;
+    line-height: 0.4rem;
+}
+.people-box .input-text{
+    flex: 1;
+}
+.tel-list{
+    padding: 0.22rem 0;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    color: #6D6D6D;
+}
+.area{
+    padding: 0.22rem 0;
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    color: #333;
+    min-height: 2.04rem;
+}
+.btn-box{
+    position: absolute;
+    left: 0;
+    bottom: 0.36rem;
+    width: 100%;
+    padding: 0 0.26rem;
+}

@@ -1,0 +1,72 @@
+.main{
+    padding: 0 0.2rem 0.28rem;
+}
+.list{
+    padding: 0 0.24rem;
+    background-color: #fff;
+    border-radius: 0.08rem;
+}
+.list-title{
+    position: relative;
+    height: 0.94rem;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.list-title h3{
+    font-size: 0.32rem;
+    line-height: 0.94rem;
+    text-align: center;
+}
+.btn-add{
+    position: absolute;
+    right: 0.24rem;
+    top: 0.3rem;
+    line-height: 0.34rem;
+    font-size: 0.24rem;
+    color: #0588FE;
+}
+.list{
+    height: 100%;
+    overflow: auto;
+}
+.list ul{
+    padding: 0.08rem 0 0.48rem;
+}
+.list ul li{
+    display: flex;
+    align-items: center;
+    padding: 0.24rem 0 0.34rem;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.list ul li p{
+    color: #333;
+}
+.list-item{
+    flex: 1;
+}
+.info{
+    display: flex;
+    margin-bottom: 0.12rem;
+}
+.info span{
+    display: inline-block;
+    line-height: 0.4rem;
+}
+.tel{
+    margin-left: 0.24rem;
+    font-size: 0.24rem;
+    color: #0588FE;
+}
+.address{
+    line-height: 0.4rem;
+}
+.btn-edit{
+    margin-left: 0.78rem;
+    display: block;
+    width: 1.36rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    border-radius: 0.32rem;
+    background-color: #0588FE;
+    color: #fff;
+    text-align: center;
+}

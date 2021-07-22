@@ -1,0 +1,82 @@
+.main{
+    padding: 0 0.2rem 0.4rem;
+    overflow: auto;
+}
+.main-info{
+
+}
+.info-list{
+    background-color: #fff;
+    border-radius: 0.08rem;
+    overflow: hidden;
+    margin-bottom: 0.4rem;
+}
+.info-list h3{
+    padding: 0 0.32rem;
+    height: 0.76rem;
+    line-height: 0.76rem;
+    font-size: 0.32rem;
+    background: #EEF2FB;
+    color: #0588FE;
+}
+.info-bd{
+    padding: 0 0.32rem;
+}
+.bd-item{
+    padding: 0.24rem 0 0.12rem;
+    line-height: 0.4rem;
+    color: #333;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.bd-item h4{
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    margin-bottom: 0.12rem;
+    color: #0588FE;
+}
+.bd-item dl{
+    display: flex;
+    margin-bottom: 0.12rem;
+}
+.bd-item dt{
+
+}
+.bd-item dd{
+    flex: 1;
+}
+.total-remark{
+    padding: 0.24rem 0 0.28rem;
+    display: flex;
+    justify-content: space-between;
+}
+.total-remark h4{
+    margin-bottom: 0;
+}
+.star-box,.star-box .icons{
+    height: 0.4rem;
+}
+.leave-msg{
+    padding: 0.28rem 0 0.26rem;
+    border-bottom: none;
+}
+.leave-msg h4{
+    margin-bottom: 0;
+}
+.info-bd{
+
+}
+.course-wrap{
+    padding: 0.22rem 0.32rem 0.12rem;
+}
+.course-box{
+    margin-bottom: 0.4rem;
+}
+.course-box p{
+    color: #333;
+    line-height: 0.4rem;
+    margin-bottom: 0.28rem;
+}
+.course-box img{
+    display: block;
+    max-width: 100%;
+}

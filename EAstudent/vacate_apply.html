@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学员自助系统</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/vacate_apply.css">
+    <link rel="stylesheet" href="css/mui.picker.min.css">
+</head>
+<body>
+    <a class="return" href="vacate.html">返回</a>
+    <div class="main">
+        <div class="apply">
+            <dl>
+                <dt class="has-padding">请假日期：</dt>
+                <dd>
+                    <button class="select-box select-date"></button>
+                </dd>
+            </dl>
+            <dl>
+                <dt class="has-padding">请假课时：</dt>
+                <dd class="ellipsis"><button class="select-box select-name ellipsis" id="select-name"></button></dd>
+            </dl>
+            <dl>
+                <dt>任课老师：</dt>
+                <dd>叶丰茂</dd>
+            </dl>
+            <dl>
+                <dt>上课地点：</dt>
+                <dd>集团总部-教室五</dd>
+            </dl>
+            <dl>
+                <dt class="has-padding">请假原因：</dt>
+                <dd>
+                    <textarea class="textarea" name="" id="" placeholder="请填写原因"></textarea>
+                </dd>
+            </dl>
+            <a class="btn-submit" href="javascript:;">确认申请</a>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.picker.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        (function($, doc) {
+            $.init();
+            var result = $('.select-date')[0];
+            $('.apply').on('tap','.select-date',function(){
+                var _self = this;
+                if(_self.picker) {
+                    _self.picker.show(function (rs) {
+                        result.innerText = rs.text +' '+ getWeekDate(rs.text);
+                        _self.picker.dispose();
+                        _self.picker = null;
+                    });
+                } else {
+                    var optionsJson = this.getAttribute('data-options') || '{}';
+                    var options = JSON.parse(optionsJson);
+
+                    // 设置最早能选择的时间，不需要就去掉
+                    _self.picker = new $.DtPicker({
+                        type: "date",
+                        beginDate:new Date()
+                    });
+                    _self.picker.show(function(rs) {
+                        result.innerText = rs.text +' '+ getWeekDate(rs.text);
+                        _self.picker.dispose();
+                        _self.picker = null;
+                    });
+                }
+            }, false);
+
+            /**
+             * 获取对象属性的值
+             * 主要用于过滤三级联动中，可能出现的最低级的数据不存在的情况，实际开发中需要注意这一点；
+             * @param {Object} obj 对象
+             * @param {String} param 属性名
+             */
+            var _getParam = function(obj, param) {
+                return obj[param] || '';
+            };
+            //普通示例
+            var userPicker = new $.PopPicker();
+            userPicker.setData([{
+                value: '1',
+                text: '14:00-15:50 中级管理会计师1'
+            }, {
+                value: '2',
+                text: '14:00-15:50 中级管理会计师2'
+            }, {
+                value: '3',
+                text: '14:00-15:50 中级管理会计师3'
+            }, {
+                value: '4',
+                text: '14:00-15:50 中级管理会计师4'
+            }]);
+            var showUserPickerButton = doc.getElementById('select-name');
+            showUserPickerButton.addEventListener('tap', function(event) {
+                userPicker.show(function(items) {
+                    console.log(items);
+                    // showUserPickerButton.innerText = JSON.stringify(items[0]);
+                    showUserPickerButton.innerText = items[0].text;
+                    //返回 false 可以阻止选择框的关闭
+                    //return false;
+                });
+            }, false);
+        })(mui,document);
+    </script>
+</body>
+</html>

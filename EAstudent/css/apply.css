@@ -1,0 +1,85 @@
+.main{
+    padding: 0 0.2rem;
+    overflow: auto;
+    color: #333;
+}
+.main ul li{
+    margin-bottom: 0.2rem;
+    border-radius: 0.08rem;
+    overflow: hidden;
+}
+.item-hd{
+    height: 0.76rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.32rem;
+    background-color: #EEF2FB;
+}
+.item-hd h3{
+    flex: 1;
+    font-size: 0.32rem;
+    line-height: 0.44rem;
+}
+.item-bd{
+    padding: 0.22rem 0.32rem 0.18rem;
+    background-color: #fff;
+}
+.item-bd dl{
+    display: flex;
+    margin-bottom: 0.2rem;
+}
+.item-bd dt{
+    line-height: 0.4rem;
+    margin-right: 0.1rem;
+}
+.item-bd dd{
+    flex: 1;
+    line-height: 0.4rem;
+}
+/* 报名详情 */
+.tips{
+    display: block;
+    width: 1.2rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+    background-color: #503CEA;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-size: 0.24rem;
+}
+.class-info{
+    margin-bottom: 0.2rem;
+}
+.item-table{
+    padding: 0 0.32rem 0.18rem;
+    background-color: #fff;
+}
+.table{
+    table-layout: fixed;
+}
+.table tr,.table th,.table td{
+    padding: 0.25rem 0;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.table tr{
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.table th{
+    font-weight: normal;
+}
+.table tbody tr:last-child{
+    border-bottom: none;
+}
+.table .title{
+    text-align: left;
+    width: 45%;
+}
+.schedule{
+    padding-left: 0.4rem;
+    background: url('../images//icon_schedule.png') no-repeat left center;
+    background-size: 0.31rem 0.3rem;
+    color: #0588FE;
+}

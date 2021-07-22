@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*touch-action: pan-y;*/
+}
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 50px;
+}
+/*@media screen and (device-width:768px){*/
+/*    !*ipad 2.048倍*!*/
+/*    html{*/
+/*        font-size: 102.4px;*/
+/*    }*/
+/*    .img1 img{*/
+/*        width: 204%;*/
+/*    }*/
+/*}*/
+/*@media screen and (device-width:414px){*/
+/*    !*iphone 6/7/8plus 1.1倍*!*/
+/*    html{*/
+/*        font-size: 55px;*/
+/*    }*/
+/*    .img1 img{*/
+/*        !*width: 110%;*!*/
+/*    }*/
+/*    .comment{*/
+/*        position: relative;*/
+/*        right: -38px !important;*/
+/*        bottom: -13px !important;*/
+/*    }*/
+/*    .btn{*/
+/*        margin: 0.2rem 0 0 0.2rem !important;*/
+/*    }*/
+/*}*/
+/*@media screen and (device-width:411px){*/
+/*    !*pixel2 1.09倍*!*/
+/*    html{*/
+/*        font-size: 54.8px;*/
+/*    }*/
+/*    .img1 img{*/
+/*        width: 109%;*/
+/*    }*/
+/*    .comment{*/
+/*        position: relative;*/
+/*        right: -38px !important;*/
+/*        bottom: -14px !important;*/
+/*    }*/
+/*    .btn{*/
+/*        margin: 0.2rem 0 0 0.2rem !important;*/
+/*    }*/
+/*}*/
+/*@media screen and (device-width:360px){*/
+/*    html{*/
+/*        font-size: 48px;*/
+/*    }*/
+/*    .img1 img{*/
+/*        width: 100%;*/
+/*    }*/
+/*    .comment{*/
+/*        position: relative;*/
+/*        right: -26px !important;*/
+/*        bottom: -12px !important;*/
+/*    }*/
+/*}*/
+/*@media screen and (device-width:320px){*/
+/*    html{*/
+/*        font-size: 42.7px;*/
+/*    }*/
+/*    .comment{*/
+/*        position: relative;*/
+/*        right: -18px !important;*/
+/*        bottom: -12px !important;*/
+/*    }*/
+/*}*/
+
+body{
+    font-family:'Microsoft YaHei','Helvetica Neue',Helvetica,sans-serif;
+    font-size: 0.28rem;
+    line-height: 1;
+    color: #333;
+    background-color:#F5F6F8;
+}
+ul li{
+    list-style: none;
+}
+img{
+    border:0;
+    max-width: 100%;
+}
+input,textarea{
+    outline: none;
+    border: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+html, body{
+    height: 100%;
+}
+/* mui样式重置 */
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+input, select, textarea{
+    font-family:'Microsoft YaHei','Helvetica Neue',Helvetica,sans-serif;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #9D9D9D;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #9D9D9D;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #9D9D9D;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9D9D9D;
+}
+.ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* 页面公共样式 */
+.return{
+    border-top: 0.02rem solid #F5F6F8;
+    padding: 0 0.26rem 0 0.54rem;
+    display: block;
+    line-height: 0.76rem;
+    background: #fff url('../images/back.png') no-repeat 0.26rem center;
+    background-size: 0.17rem 0.3rem;
+    color: #6D6D6D;
+    margin-bottom: 0.4rem;
+}
+/* 公共tab栏样式 */
+.com-tab{
+    border: none;
+    border-radius: 0.08rem 0.08rem 0 0;
+    border-bottom: 0.02rem solid #EEF2FB;
+}
+.com-tab .mui-control-item{
+    background-color: #EEF2FB;
+    border: none;
+    color: #333;
+    font-size: 0.28rem;
+    line-height: 0.76rem;
+}
+.com-tab .mui-control-item.mui-active{
+    background-color: #fff;
+    color: #0588FE;
+}
+/* 评价 */
+.star-box .icons i{
+    display: inline-block;
+    width: 0.34rem;
+    height: 0.4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.34rem 0.33rem;
+    margin-right: 0.1rem;
+}
+.icon-star{
+    background-image: url('../images/star.png');
+}
+.icon-star-filled{
+    background-image: url('../images/star_fill.png');
+}
+.star-box .text{
+    margin-left: 0.1rem;
+    line-height: 0.4rem;
+    font-size: 0.24rem;
+    color: #F06C57;
+}
+.main{
+    height: calc(100% - 1.18rem);
+}
+.btn-submit{
+    display: block;
+    height: 0.84rem;
+    line-height: 0.84rem;
+    color: #fff;
+    text-align: center;
+    background-color: #0588FE;
+    border-radius: 0.08rem;
+}
+.btn-detail {
+    display: inline-block;
+    line-height: 0.32rem;
+    padding-left: 0.46rem;
+    background: url(../images/icon_detail.png) no-repeat left center;
+    background-size: 0.32rem;
+    color: #0588FE;
+    font-size: 0.24rem;
+}

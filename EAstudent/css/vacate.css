@@ -1,0 +1,68 @@
+.main{
+    padding: 0 0.2rem;
+}
+.btn-submit{
+    margin-bottom: 0.4rem;
+}
+.list{
+    height: calc(100% - 1.24rem);
+    overflow: auto;
+}
+.list ul li{
+    padding: 0.26rem 0.26rem 0.24rem;
+    border-radius: 0.08rem;
+    margin-bottom: 0.4rem;
+    background-color: #fff;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.item1{
+    margin-bottom: 0.16rem;
+}
+.item2{
+    margin-bottom: 0.08rem;
+}
+.item1{
+    margin-bottom: 0.16rem;
+}
+.item span{
+    display: inline-block;
+}
+.time{
+    font-size: 0.24rem;
+    line-height: 0.32rem;
+}
+.item2 span{
+    line-height: 0.44rem;
+}
+.item3 span{
+    line-height: 0.4rem;
+}
+.title{
+    flex: 1;
+    margin-right: 0.3rem;
+    font-size: 0.32rem;
+    color: #0588FE;
+}
+.teacher{
+    color: #333;
+}
+.classroom{
+    flex: 1;
+    margin-right: 0.4rem;
+    color: #333;
+}
+.status{
+    font-size: 0.24rem;
+}
+.looking{
+    color: #EEAB39;
+}
+.refuse{
+    color: #F06C57;
+}
+.agree{
+    color: #503CEA;
+}

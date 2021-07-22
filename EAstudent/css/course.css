@@ -1,0 +1,101 @@
+.list1 ul li{
+    padding: .16rem .28rem .28rem;
+    border-bottom: 0.02rem solid #EEF2FB;
+    background-color: #fff;
+    border-radius: .08rem;
+    margin-top: .2rem;
+}
+.list2{
+    background:white;
+    padding: .34rem .18rem 1.28rem;
+}
+.list2 ul li{
+    padding: .32rem .24rem;
+    border-bottom: 0.02rem solid #EEF2FB;
+    background-color: #fff;
+    border-radius: .08rem;
+    border: .02rem solid #EEF2FB;
+    margin-bottom: .2rem;
+}
+.main{
+    padding: 0 0.2rem;
+}
+.course-box{
+    height: 100%;
+}
+.date{
+    height: 6.4rem;
+
+}
+.list{
+    height: calc(100% - 0.78rem);
+    overflow: auto;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.item1{
+    height: .56rem;
+    line-height: .56rem;
+    margin-bottom: 0.16rem;
+}
+.item2{
+    margin-bottom: 0.08rem;
+}
+.item1{
+    margin-bottom: 0.16rem;
+}
+.item span{
+    display: inline-block;
+}
+.time,.campus{
+    line-height: 0.32rem;
+}
+.teacher,.classroom{
+    color: #333;
+}
+.item2 span{
+    line-height: 0.44rem;
+}
+.item3 span{
+    line-height: 0.4rem;
+}
+.title{
+    flex: 1;
+    margin-right: 0.3rem;
+    font-size: 0.32rem;
+    color: #0588FE;
+}
+
+.status{
+    font-size: 0.24rem;
+}
+.status{
+    width: 1.36rem;
+    height: .56rem;
+    line-height: .56rem;
+    background: #EEAB39;
+    display: inline-block;
+    font-size: .24rem;
+    text-align: center;
+    border-radius: .5rem;
+    color: white;
+}
+.sign{
+    display: inline-block;
+    padding-left: 0.46rem;
+    background-size: 0.32rem 0.32rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url('../images/icon_detail.png');
+    color: #0588FE
+}
+.finished{
+    color:#503CEA ;
+}
+@media screen and (max-width: 352px) {
+   .item2{
+       font-size: 12px;
+   }
+}
